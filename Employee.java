@@ -1,37 +1,75 @@
-//WAP to enter employee details   class and Object
+//  private encapsulation using Getter and Setter methods
+
+//to create employee class and print details of the employee
+
 
 import java.util.Scanner;
-class Employee
+class JobHolder
   {
-    String Name;
-    int EmployeeNumber;
-    String Dept;
-    
+    private int num;
+    private String name;
+    private String dept;
+    private int salary;
 
+    void setNum(int num)
+    {
+      this.num=num;
+    }
+    int getNum()
+    {
+      return this.num;
+    }
+    void setName(String name)
+    {
+      this.name=name;
+    }
+    String getName()
+    {
+      return this.name;
+    }
+    void setDept(String dept)
+    {
+      this.dept=dept;
+    }
+    String getDept()
+    {
+      return this.dept;
+    }
+    void setSalary(int salary)
+    {
+      this.salary=salary;
+    }
+    String getSalary()
+    {
+      return this.salary;
+  }
+
+public class Employee
+  {
     public static void main(String args[])
     {
-      Employee Emp1=new Employee();
-      Emp1.Name="Dinesh";
-      Emp1.EmployeeNumber=49361;
-      Emp1.Dept="Construction";
-     
+      Scanner sc=new Scanner(System.in);
+        
+        Employee emp1= new Employee();
+        
+        System.out.println("Enter Num:");
+        emp1.setNum(sc.nextInt());
+
+        System.out.println("Enter Name:");
+        emp1.setName(sc.next());
+
+        System.out.println("Enter Dept:");
+        emp1.setDept(sc.next());
+
+        System.out.println("Enter Salary:");
+        emp1.setSalary(sc.nextInt());
+
+
       
-
-      Employee Emp2=new Employee();
-      Emp2.Name="Gopal";
-      Emp2.EmployeeNumber=49362;
-      Emp2.Dept="Highway";
-    
-
-
-      Employee Emp3=new Employee();
-      Emp3.Name="Durgesh";
-      Emp3.EmployeeNumber=49363;
-      Emp3.Dept="Structure";
-     
-
-      System.out.println(Emp1.Name+"   "+Emp1.EmployeeNumber+"    "+Emp1.Dept);
-      System.out.println(Emp2.Name+"    "+Emp2.EmployeeNumber+"    "+Emp2.Dept);
-      System.out.println(Emp3.Name+"  "+Emp3.EmployeeNumber+"    "+Emp3.Dept);
+       System.out.println(emp1.getNum()+" "+emp1.getName()+" "+emp1.getDept()+" "+emp1.getSalary());
     }
   }
+  }
+
+
+
