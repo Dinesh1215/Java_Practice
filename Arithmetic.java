@@ -1,4 +1,4 @@
-//Arithmetic Exception with int values
+// Arithmetic Exception 
 
 class Arithmetic
   {
@@ -6,8 +6,8 @@ class Arithmetic
     {
       int a=10;
       int b=0;
-      c=a/b;
-      
       System.out.println(a/b);
-    }
   }
+    }
+  
+    
